@@ -83,7 +83,9 @@
               />
             </div>
             <div class="magin-btns-login">
-              <button class="btn-login">Iniciar sesión</button>
+              <button type="button" class="btn-login" id="btn-login">
+                Iniciar sesión
+              </button>
               <button class="btn-practice">Practicar</button>
             </div>
           </div>
@@ -106,5 +108,60 @@
         </ul>
       </div>
     </footer>
+
+    <!--==================================================
+    MODAL - LOGIN
+    ===================================================-->
+
+    <div class="grid-modal" id="modal-login">
+      <div class="style-modal-content">
+        <div class="style-modal-body" id="modal-login-body">
+          <div class="form-modal">
+            <h1 class="title-modal">Iniciar sesión</h1>
+            <form action="practice.html">
+              <div class="style-group-input">
+                <div class="style-icon-modal">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <input
+                  type="email"
+                  class="style-input-modal"
+                  id="email_login"
+                  name="email_login"
+                  placeholder="Correl electronico"
+                  required
+                  autofocus
+                />
+              </div>
+              <div class="style-group-input">
+                <div class="style-icon-modal">
+                  <i class="fas fa-key"></i>
+                </div>
+                <input
+                  type="password"
+                  class="style-input-modal"
+                  id="password_login"
+                  name="password_login"
+                  placeholder="Contraseña"
+                  required
+                />
+              </div>
+              <button type="submit" class="style-btn-green" id="btn-login">
+                Iniciar sesión
+              </button>
+              <button
+                type="button"
+                class="style-btn-transparent"
+                id="btn-cancel-modal-login"
+              >
+                Cancelar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/utils/definitions.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
