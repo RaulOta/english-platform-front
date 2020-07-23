@@ -1,0 +1,52 @@
+/*============================================
+DESK (XL review in 1366px onwards)
+============================================*/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a:visited,
+a:link,
+a:focus,
+a:hover,
+a:active {
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #01c1f6;
+}
+
+/*============================================
+  HORIZONTAL TABLET (LG review in 1024px)
+  ============================================*/
+@media (max-width: 1119px) and (min-width: 1992px) {
+}
+
+/*============================================
+  VERTICAL TABLET (MD review in 768px)
+  ============================================*/
+@media (max-width: 1991px) and (min-width: 768px) {
+}
+
+/*============================================
+  HORIZONTAL MOBILE (SM review in 576px)
+  ============================================*/
+@media (max-width: 767px) and (win-width: 576px) {
+}
+
+/*============================================
+  VERTICAL MOBILE (review in 320px)
+  ============================================*/
+@media (max-width: 575px) {
+}
