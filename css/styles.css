@@ -28,25 +28,99 @@ body {
 }
 
 /*============================================
+HEADER
+============================================*/
+header {
+  padding: 0;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-color: white;
+}
+
+.logo {
+  padding: 5px 0;
+  width: 60%;
+}
+
+.style-ul-menu {
+  padding: 0;
+  margin: 0;
+}
+
+.style-ul-menu li {
+  display: inline;
+}
+
+.style-ul-menu li a {
+  font-size: 20px;
+  font-weight: 400;
+  float: right;
+  padding: 20px 0;
+  color: white;
+}
+
+.style-ul-menu li a:hover {
+  color: white;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+/*============================================
   HORIZONTAL TABLET (LG review in 1024px)
   ============================================*/
-@media (max-width: 1119px) and (min-width: 1992px) {
+@media (max-width: 1119px) and (min-width: 992px) {
 }
 
 /*============================================
   VERTICAL TABLET (MD review in 768px)
   ============================================*/
-@media (max-width: 1991px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
+  .logo {
+    padding: 8px 0;
+    width: 70%;
+  }
+
+  .style-ul-menu li a:hover {
+    font-size: 22px;
+  }
 }
 
 /*============================================
   HORIZONTAL MOBILE (SM review in 576px)
   ============================================*/
-@media (max-width: 767px) and (win-width: 576px) {
+@media (max-width: 767px) and (min-width: 576px) {
+  .logo {
+    padding: 6px 0;
+    width: 65%;
+  }
+
+  .style-ul-menu li a {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 13px 0;
+  }
+
+  .style-ul-menu li a:hover {
+    font-size: 19px;
+  }
 }
 
 /*============================================
   VERTICAL MOBILE (review in 320px)
   ============================================*/
 @media (max-width: 575px) {
+  .logo {
+    padding: 10px 0 9px 0;
+    width: 77%;
+  }
+
+  .style-ul-menu li a {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 0 10px 0;
+  }
+
+  .style-ul-menu li a:hover {
+    font-size: 18px;
+  }
 }
