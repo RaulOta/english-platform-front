@@ -1,7 +1,7 @@
 /*==============================================
 MODAL - LOGIN
 ==============================================*/
-btnLogin.addEventListener("click", () => {
+btnShowLogin.addEventListener("click", () => {
   modalLogin.style.display = "block";
 });
 
@@ -13,4 +13,21 @@ modalLogin.addEventListener("click", function (e) {
 
 btnCancelModalLogin.addEventListener("click", () => {
   modalLogin.style.display = "none";
+});
+
+/*==============================================
+MODAL - SIGN UP
+==============================================*/
+btnShowSignUp.addEventListener("click", () => {
+  modalSignUp.style.display = "block";
+});
+
+modalSignUp.addEventListener("click", (e) => {
+  if (!modalSignUpBody.contains(e.target)) {
+    modalSignUp.style.display = "none";
+  }
+});
+
+btnCancelModalSignUp.addEventListener("click", () => {
+  modalSignUp.style.display = "none";
 });
