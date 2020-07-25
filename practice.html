@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+
+    <!-- Latest compiled and minified CSS BOOTSTRAP 4-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Typefaces / Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons - Font Awesone -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
+      integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+      crossorigin="anonymous"
+    />
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!--==================================================
+    HEADER  
+    ===================================================-->
+    <header class="container-fluid">
+      <div class="container p-0">
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+            <a class="a-logo" href="#">
+              <img
+                src="img/logo-temporal-portafolio-negativo.png"
+                alt="English platform"
+                class="img-fluid logo"
+              />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="">
+              <ul class="style-ul-menu">
+                <li>
+                  <a href="index.html">Inicio</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--==================================================
+    BODY - PRACTICE
+    ===================================================-->
+    <div class="container-fluid wraper">
+      <div class="container p-0">
+        <div class="grid-practice">
+          <div class="grid-practice-words">
+            <div>
+              <button class="btn-word-practice">words</button>
+              <button class="btn-word-practice">words</button>
+              <button class="btn-word-practice">words</button>
+              <button class="btn-word-practice">words</button>
+              <button class="btn-word-practice">how are you?</button>
+              <button class="btn-word-practice">how are you?</button>
+              <button class="btn-word-practice">palabras</button>
+              <button class="btn-word-practice">palabras</button>
+              <button class="btn-word-practice">palabras</button>
+              <button class="btn-word-practice">palabras</button>
+              <button class="btn-word-practice">palabras</button>
+              <button class="btn-word-practice">words</button>
+              <button class="btn-word-practice">words</button>
+              <button class="btn-word-practice">words</button>
+              <button class="btn-word-practice">words</button>
+              <button class="btn-word-practice">palabras</button>
+              <button class="btn-word-practice">palabras</button>
+              <button class="btn-word-practice">palabras</button>
+              <button class="btn-word-practice">palabras</button>
+              <button class="btn-word-practice">palabras</button>
+            </div>
+          </div>
+          <div class="grid-line">
+            <hr />
+          </div>
+          <div class="grid-practice-btns">
+            <div class="magin-practice-btns">
+              <button type="submit" class="style-btn-green" id="btn-show-login">
+                Iniciar sesión
+              </button>
+              <button
+                type="button"
+                class="style-btn-transparent"
+                style="color: white; border-color: white;"
+                id="btn-show-sign-up"
+              >
+                Crear cuenta
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==================================================
+    FOOTER
+    ===================================================-->
+    <footer>
+      <div>
+        <ul class="style-footer">
+          <li><span>Cophyrigth</span></li>
+          <li><i class="far fa-copyright"></i></li>
+          <li><span>2020.</span></li>
+          <li>
+            <a href="https://raulotanez.com/">Luis Raúl Otañez Montiel</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!--==================================================
+    MODAL - LOGIN
+    ===================================================-->
+
+    <div class="grid-modal" id="modal-login">
+      <div class="style-modal-content">
+        <div class="style-modal-body" id="modal-login-body">
+          <div class="form-modal">
+            <h1 class="title-modal">Iniciar sesión</h1>
+            <form action="practice.html">
+              <div class="style-group-input">
+                <div class="style-icon-modal">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <input
+                  type="email"
+                  class="style-input-modal"
+                  id="email_login"
+                  name="email_login"
+                  placeholder="Correo electrónico"
+                  required
+                  autofocus
+                />
+              </div>
+              <div class="style-group-input">
+                <div class="style-icon-modal">
+                  <i class="fas fa-key"></i>
+                </div>
+                <input
+                  type="password"
+                  class="style-input-modal"
+                  id="password_login"
+                  name="password_login"
+                  placeholder="Contraseña"
+                  required
+                />
+              </div>
+              <button type="submit" class="style-btn-green" id="btn-login">
+                Iniciar sesión
+              </button>
+              <button
+                type="button"
+                class="style-btn-transparent"
+                id="btn-cancel-modal-login"
+              >
+                Cancelar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==================================================
+    MODAL - SIGN UP
+    ===================================================-->
+
+    <div class="grid-modal" id="modal-sign-up">
+      <div class="style-modal-content">
+        <div class="style-modal-body" id="modal-sign-up-body">
+          <div class="form-modal">
+            <h1 class="title-modal">Crear cuenta</h1>
+            <form action="practice.html">
+              <div class="style-group-input">
+                <div class="style-icon-modal">
+                  <i class="fas fa-user"></i>
+                </div>
+                <input
+                  type="name"
+                  class="style-input-modal"
+                  id="name_sign_up"
+                  name="name_sign_up"
+                  placeholder="Nombre completo"
+                  required
+                  autofocus
+                />
+              </div>
+              <div class="style-group-input">
+                <div class="style-icon-modal">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <input
+                  type="email"
+                  class="style-input-modal"
+                  id="email_sign_up"
+                  name="email_sign_up"
+                  placeholder="Correo electrónico"
+                  required
+                />
+              </div>
+              <div class="style-group-input">
+                <div class="style-icon-modal">
+                  <i class="fas fa-key"></i>
+                </div>
+                <input
+                  type="password"
+                  class="style-input-modal"
+                  id="password_sign_up"
+                  name="password_sign_up"
+                  placeholder="Contraseña"
+                  required
+                />
+              </div>
+              <button type="submit" class="style-btn-green" id="btn-sign-up">
+                Crear mi cuenta
+              </button>
+              <button
+                type="button"
+                class="style-btn-transparent"
+                id="btn-cancel-modal-sign-up"
+              >
+                Cancelar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/utils/definitions.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
