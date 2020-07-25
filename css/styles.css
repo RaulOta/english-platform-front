@@ -37,9 +37,16 @@ header {
   border-color: white;
 }
 
+.container-logo-header {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-  padding: 5px 0;
-  width: 60%;
+  padding: 0;
+  width: auto;
+  height: 60px;
 }
 
 .style-ul-menu {
@@ -352,9 +359,28 @@ BODY - PRACTICE
   margin: 0 50px 0 30px;
 }
 
-#btn-sign-up-practice:focus {
+#btn-show-sign-up:focus {
   outline: none;
   box-shadow: 0 0 10px 0 white;
+}
+
+/*============================================
+  HEADER - PAGE HOME
+============================================*/
+
+#btn-menu-logged-in:hover {
+  cursor: pointer;
+}
+
+.img-header-logged-in {
+  width: 60px;
+  height: 60px;
+  border: 1px solid white;
+  object-fit: cover;
+}
+
+#logo-logged-in {
+  height: 70px;
 }
 
 /*============================================
@@ -419,8 +445,7 @@ BODY - PRACTICE
   ============================================*/
 @media (max-width: 991px) and (min-width: 768px) {
   .logo {
-    padding: 8px 0;
-    width: 70%;
+    height: 55px;
   }
 
   .style-ul-menu li a:hover {
@@ -550,6 +575,10 @@ BODY - PRACTICE
   .grid-practice-btns {
     margin: 0 40px 0 20px;
   }
+
+  #logo-logged-in {
+    height: 60px;
+  }
 }
 
 /*============================================
@@ -557,14 +586,14 @@ BODY - PRACTICE
   ============================================*/
 @media (max-width: 767px) and (min-width: 576px) {
   .logo {
-    padding: 6px 0;
-    width: 65%;
+    width: auto;
+    height: 43px;
   }
 
   .style-ul-menu li a {
-    font-size: 16px;
+    font-size: 17.5px;
     font-weight: 400;
-    padding: 13px 0;
+    padding: 15px 0;
   }
 
   .style-ul-menu li a:hover {
@@ -722,6 +751,18 @@ BODY - PRACTICE
   .grid-practice-btns #btn-sign-up-practice {
     height: 60px;
   }
+
+  /*============================================
+  HEADER - PAGE HOME
+  ============================================*/
+
+  #name-logged-in {
+    display: none;
+  }
+
+  #logo-logged-in {
+    height: 50px;
+  }
 }
 
 /*============================================
@@ -729,14 +770,13 @@ BODY - PRACTICE
   ============================================*/
 @media (max-width: 575px) {
   .logo {
-    padding: 10px 0 9px 0;
-    width: 77%;
+    height: 41px;
   }
 
   .style-ul-menu li a {
     font-size: 16px;
     font-weight: 400;
-    padding: 12px 0 10px 0;
+    padding: 12px 0;
   }
 
   .style-ul-menu li a:hover {
@@ -901,5 +941,22 @@ BODY - PRACTICE
 
   .grid-practice-btns #btn-sign-up-practice {
     height: 55px;
+  }
+
+  /*============================================
+  HEADER - PAGE HOME
+  ============================================*/
+
+  #name-logged-in {
+    display: none;
+  }
+
+  #logo-logged-in {
+    height: 46px;
+  }
+
+  .img-header-logged-in {
+    width: 45px;
+    height: 45px;
   }
 }
