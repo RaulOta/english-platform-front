@@ -8,3 +8,9 @@ const modalSignUpBody = document.querySelector("#modal-sign-up-body");
 const btnCancelModalSignUp = document.querySelector(
   "#btn-cancel-modal-sign-up"
 );
+const btnShowAddWord = document.querySelector("#btn-show-add-word");
+const modalAddWord = document.querySelector("#modal-add-word");
+const modalAddWordBody = document.querySelector("#modal-add-word-body");
+const btnCancelModalAddWord = document.querySelector(
+  "#btn-cancel-modal-add-word"
+);

@@ -67,6 +67,83 @@
     </header>
 
     <!--==================================================
+    BODY - HOME
+    ===================================================-->
+    <div class="container-fluid wraper">
+      <div class="container p-0">
+        <div class="grid-logged-in">
+          <div class="grid-practice-words">
+            <div>
+              <button class="btn-word-practice">words</button>
+              <button class="btn-word-practice">words</button>
+              <button class="btn-word-practice">words</button>
+              <button class="btn-word-practice">words</button>
+              <button class="btn-word-practice">how are you?</button>
+              <button class="btn-word-practice">how are you?</button>
+              <button class="btn-word-practice">palabras</button>
+              <button class="btn-word-practice">palabras</button>
+              <button class="btn-word-practice">palabras</button>
+              <button class="btn-word-practice">palabras</button>
+              <button class="btn-word-practice">palabras</button>
+              <button class="btn-word-practice">words</button>
+              <button class="btn-word-practice">words</button>
+              <button class="btn-word-practice">words</button>
+              <button class="btn-word-practice">words</button>
+              <button class="btn-word-practice">palabras</button>
+              <button class="btn-word-practice">palabras</button>
+              <button class="btn-word-practice">palabras</button>
+              <button class="btn-word-practice">palabras</button>
+              <button class="btn-word-practice">palabras</button>
+            </div>
+          </div>
+          <div class="grid-form-logged-in">
+            <div class="style-form-body">
+              <div class="form-modal">
+                <h1 class="title-modal">Agregar nueva palabra</h1>
+                <form action="practice.html">
+                  <div class="style-group-input">
+                    <input
+                      type="text"
+                      class="style-input-modal"
+                      id="add_word_english"
+                      name="add_word_english"
+                      placeholder="Palabra en inglés"
+                      required
+                    />
+                  </div>
+                  <div class="style-group-input">
+                    <input
+                      type="text"
+                      class="style-input-modal"
+                      id="add_word_spanish"
+                      name="add_word_spanish"
+                      placeholder="palabra en español"
+                      required
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    class="style-btn-green"
+                    id="btn-add-word"
+                  >
+                    Agregar
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="grid-practice-btns">
+            <div class="magin-practice-btns">
+              <button class="style-btn-green" id="btn-show-add-word">
+                Agregar nueva palabra
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==================================================
     FOOTER
     ===================================================-->
     <footer>
@@ -82,7 +159,57 @@
       </div>
     </footer>
 
+    <!--==================================================
+    MODAL - ADD NEW WORD
+    ===================================================-->
+
+    <div class="grid-modal" id="modal-add-word">
+      <div class="style-modal-content">
+        <div class="style-modal-body" id="modal-add-word-body">
+          <div class="form-modal">
+            <h1 class="title-modal">Agregar nueva palabra</h1>
+            <form action="practice.html">
+              <div class="style-group-input">
+                <input
+                  type="text"
+                  class="style-input-modal"
+                  id="add_word_english"
+                  name="add_word_english"
+                  placeholder="Palabra en inglés"
+                  required
+                />
+              </div>
+              <div class="style-group-input">
+                <input
+                  type="text"
+                  class="style-input-modal"
+                  id="add_word_spanish"
+                  name="add_word_spanish"
+                  placeholder="palabra en español"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                class="style-btn-green"
+                id="btn-add-word-modal"
+              >
+                Agregar
+              </button>
+              <button
+                type="button"
+                class="style-btn-transparent"
+                id="btn-cancel-modal-add-word"
+              >
+                Cancelar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="js/utils/definitions.js"></script>
-    <!-- <script src="js/index.js"></script> -->
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -384,6 +384,43 @@ BODY - PRACTICE
 }
 
 /*============================================
+BODY - PAGE HOME AND PROFILE
+============================================*/
+.grid-logged-in {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  grid-template-rows: 400px;
+}
+
+.grid-logged-in .grid-practice-words {
+  margin: 0 10px 0 0;
+}
+
+.grid-form-logged-in {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.grid-form-logged-in .style-form-body {
+  background: white;
+  padding: 10px 0;
+  text-align: center;
+  margin: 0 0 0 10px;
+}
+
+.grid-form-logged-in .style-input-modal {
+  border: 1px solid #707070;
+}
+
+#modal-add-word .style-input-modal {
+  border: 1px solid #707070;
+}
+
+.grid-logged-in .grid-practice-btns {
+  display: none;
+}
+
+/*============================================
   HORIZONTAL TABLET (LG review in 1024px)
   ============================================*/
 @media (max-width: 1119px) and (min-width: 992px) {
@@ -579,6 +616,27 @@ BODY - PRACTICE
   #logo-logged-in {
     height: 60px;
   }
+
+  /*============================================
+  BODY - PAGE HOME AND PROFILE
+  ============================================*/
+  .grid-logged-in {
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 400px;
+  }
+
+  .grid-logged-in .grid-practice-words {
+    margin: 0 8px 0 0;
+  }
+
+  .grid-form-logged-in .style-form-body {
+    padding: 8px 0;
+    margin: 0 0 0 8px;
+  }
+
+  .grid-form-logged-in .title-modal {
+    font-size: 19px;
+  }
 }
 
 /*============================================
@@ -762,6 +820,27 @@ BODY - PRACTICE
 
   #logo-logged-in {
     height: 50px;
+  }
+
+  /*============================================
+  BODY - PAGE HOME AND PROFILE
+  ============================================*/
+  .grid-logged-in {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 360px;
+  }
+
+  .grid-logged-in .grid-practice-words {
+    margin: 0 0 10px;
+  }
+
+  .grid-form-logged-in {
+    display: none;
+  }
+
+  .grid-logged-in .grid-practice-btns {
+    display: block;
   }
 }
 
@@ -958,5 +1037,25 @@ BODY - PRACTICE
   .img-header-logged-in {
     width: 45px;
     height: 45px;
+  }
+
+  /*============================================
+  BODY - PAGE HOME AND PROFILE
+  ============================================*/
+  .grid-logged-in {
+    grid-template-columns: 1fr;
+    grid-template-rows: 360px;
+  }
+
+  .grid-logged-in .grid-practice-words {
+    margin: 0 0 10px;
+  }
+
+  .grid-form-logged-in {
+    display: none;
+  }
+
+  .grid-logged-in .grid-practice-btns {
+    display: block;
   }
 }
