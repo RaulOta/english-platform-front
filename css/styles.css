@@ -421,6 +421,85 @@ BODY - PAGE HOME AND PROFILE
 }
 
 /*============================================
+BODY CONTAINER WORDS - PAGE PROFILE
+============================================*/
+#container-all-words {
+  display: block;
+  margin: 50px 50px 0 0;
+}
+
+.container-words-profile {
+  width: 100%;
+}
+
+.container-words-profile .margin-container-word {
+  margin: 20px 0;
+}
+
+.container-words-profile .container-word {
+  display: flex;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 60%);
+  box-shadow: 0px 6px 5px rgba(112, 112, 112, 84%);
+  cursor: pointer;
+}
+
+.container-words-profile .container-text-word {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  color: white;
+  font-size: 18px;
+}
+
+.container-words-profile .container-btns-actions {
+  display: flex;
+  float: right;
+  margin: 0;
+}
+
+.container-words-profile .btn-edit-word {
+  color: white;
+  padding: 3px;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  margin: 15px 10px;
+  background: orange;
+}
+
+.container-words-profile .btn-edit-word:hover {
+  background: rgb(201, 146, 50);
+}
+
+.container-words-profile .btn-delete-word {
+  color: white;
+  padding: 3px;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  margin: 15px 15px 15px 0;
+  background: red;
+}
+
+.container-words-profile .btn-delete-word:hover {
+  background: rgb(173, 65, 65);
+}
+
+.container-words-profile .container-word-spanish {
+  background: white;
+  height: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 15px 0 25px;
+  margin-top: -5px;
+  transition: all 7s;
+  display: none;
+  font-size: 17px;
+}
+
+/*============================================
   HORIZONTAL TABLET (LG review in 1024px)
   ============================================*/
 @media (max-width: 1119px) and (min-width: 992px) {
@@ -842,6 +921,21 @@ BODY - PAGE HOME AND PROFILE
   .grid-logged-in .grid-practice-btns {
     display: block;
   }
+
+  /*============================================
+  BODY CONTAINER WORDS - PAGE PROFILE
+  ============================================*/
+  #container-all-words {
+    margin: 50px 0 0;
+  }
+
+  .container-words-profile .container-text-word {
+    font-size: 17px;
+  }
+
+  .container-words-profile .container-word-spanish {
+    font-size: 16px;
+  }
 }
 
 /*============================================
@@ -1057,5 +1151,20 @@ BODY - PAGE HOME AND PROFILE
 
   .grid-logged-in .grid-practice-btns {
     display: block;
+  }
+
+  /*============================================
+  BODY CONTAINER WORDS - PAGE PROFILE
+  ============================================*/
+  #container-all-words {
+    margin: 50px 0 0;
+  }
+
+  .container-words-profile .container-text-word {
+    font-size: 17px;
+  }
+
+  .container-words-profile .container-word-spanish {
+    font-size: 16px;
   }
 }

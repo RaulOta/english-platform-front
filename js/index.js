@@ -52,3 +52,51 @@ try {
     modalAddWord.style.display = "none";
   });
 } catch (error) {}
+
+/*============================================
+CONTAINER WORDS - PAGE PROFILE
+============================================*/
+
+try {
+  containerWordEnglish.forEach((element) => {
+    element.addEventListener("click", (element) => {
+      if (!visibilityWordSpanish) {
+        showWordSpanish(element);
+      } else {
+        hiddenWordSpanish(element);
+      }
+    });
+  });
+
+  const showWordSpanish = (element) => {
+    containerWordSpanish.forEach((elementSpanish) => {
+      if (element.target.getAttribute("id") == elementSpanish.id) {
+        elementSpanish.style.display = "flex";
+        elementSpanish.style.height = "55px";
+        elementSpanish.style.transition = "height";
+        visibilityWordSpanish = true;
+        idWordSpanish = elementSpanish.id;
+      }
+    });
+  };
+
+  const forEachWordSpanish = (element) => {
+    element.forEach((e) => {
+      if (e.id == idWordSpanish) {
+        e.style.height = "0";
+        e.style.transition = "height";
+        e.style.display = "none";
+        visibilityWordSpanish = false;
+      }
+    });
+  };
+
+  const hiddenWordSpanish = (element) => {
+    if (element.target.getAttribute("id") == idWordSpanish) {
+      forEachWordSpanish(containerWordSpanish);
+    } else {
+      forEachWordSpanish(containerWordSpanish);
+      showWordSpanish(element);
+    }
+  };
+} catch (error) {}

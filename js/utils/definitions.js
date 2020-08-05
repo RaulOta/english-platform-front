@@ -14,3 +14,11 @@ const modalAddWordBody = document.querySelector("#modal-add-word-body");
 const btnCancelModalAddWord = document.querySelector(
   "#btn-cancel-modal-add-word"
 );
+
+const containerWordEnglish = document.querySelectorAll(".container-text-word");
+const containerWordSpanish = document.querySelectorAll(
+  ".container-word-spanish"
+);
+
+let visibilityWordSpanish = false;
+let idWordSpanish = 0;
