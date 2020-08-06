@@ -71,10 +71,12 @@
     ===================================================-->
     <div class="container-fluid wraper">
       <div class="container p-0">
-        <div class="grid-logged-in">
+        <div class="grid-logged-in grid-profile">
+          <!-- Container of all words -->
           <div class="grid-practice-words" id="container-all-words">
+            <h1 class="title-modal" style="color: white;">Mis palabras</h1>
             <div class="container-words-profile">
-              <!-- WORD CONTAINER 1 -->
+              <!-- Word container 1 -->
               <div class="margin-container-word">
                 <div class="container-word">
                   <div class="container-text-word" id="1">
@@ -95,7 +97,7 @@
                   <span>¿Cómo estás?</span>
                 </div>
               </div>
-              <!-- WORD CONTAINER 2 -->
+              <!-- Word container 2 -->
               <div class="margin-container-word">
                 <div class="container-word">
                   <div class="container-text-word" id="2">
@@ -114,7 +116,7 @@
                   <span>Palabras</span>
                 </div>
               </div>
-              <!-- WORD CONTAINER 3 -->
+              <!-- Word container 3 -->
               <div class="margin-container-word">
                 <div class="container-word">
                   <div class="container-text-word" id="3">
@@ -133,7 +135,7 @@
                   <span>Palabras</span>
                 </div>
               </div>
-              <!-- WORD CONTAINER 4 -->
+              <!-- Word container 4 -->
               <div class="margin-container-word">
                 <div class="container-word">
                   <div class="container-text-word" id="4">
@@ -154,9 +156,56 @@
               </div>
             </div>
           </div>
-          <div class="grid-form-logged-in">
-            <div class="style-form-body">
-              <div class="form-modal"></div>
+          <!-- Profile information form -->
+          <div class="grid-form-logged-in grid-form-info-profile">
+            <div class="style-form-body" id="style-form-body-profile">
+              <div class="btn-edit-profile">
+                <i class="far fa-edit"></i>
+              </div>
+              <div
+                class="form-modal form-info-profile"
+                style="margin: 13px 25px;"
+              >
+                <form action="#">
+                  <!-- Profile image -->
+                  <div>
+                    <img
+                      src="img/perfil-01.png"
+                      class="img-fluid rounded-circle img-photo-profile"
+                    />
+                  </div>
+                  <!-- Name -->
+                  <div class="style-group-input">
+                    <input
+                      type="text"
+                      class="style-input-modal"
+                      value="Luis Raúl Otañez Montiel"
+                      name="name_edit_profile"
+                      disabled
+                    />
+                  </div>
+                  <!-- Email -->
+                  <div class="style-group-input">
+                    <input
+                      type="email"
+                      class="style-input-modal"
+                      value="raul@gmail.com"
+                      name="email_edit_profile"
+                      disabled
+                    />
+                  </div>
+                  <!-- Password -->
+                  <div class="style-group-input">
+                    <input
+                      type="password"
+                      class="style-input-modal"
+                      value="Contraseña"
+                      name="password_edit_profile"
+                      disabled
+                    />
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -178,6 +227,110 @@
         </ul>
       </div>
     </footer>
+
+    <!--==================================================
+    MODAL - EDIT PROFILE
+    ===================================================-->
+
+    <div class="grid-modal" id="modal-edit-profile">
+      <div class="style-modal-content">
+        <div class="style-modal-body" id="modal-edit-profile-body">
+          <div class="form-modal">
+            <h1 class="title-modal">
+              Editar perfil
+            </h1>
+            <form action="practice.html">
+              <!-- Profile image -->
+              <div>
+                <img
+                  src="img/perfil-01.png"
+                  class="img-fluid rounded-circle img-photo-profile"
+                />
+                <div class="principal-content-btn-new-img-profile">
+                  <div class="secundary-content-btn-new-img-profile">
+                    <div class="position-icon-new-img-profile">
+                      <div class="container-btn-new-img-profile">
+                        <label for="new-img-profile" class="icon-camera">
+                          <i class="fas fa-camera"></i>
+                        </label>
+                        <input
+                          type="file"
+                          name="new-img-profile"
+                          id="new-img-profile"
+                          class="btn-new-img-profile"
+                        />
+                        <input
+                          type="hidden"
+                          value="img-actual"
+                          name="img_edit_profile_modal"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Name -->
+              <div class="style-group-input">
+                <div class="style-icon-modal">
+                  <i class="fas fa-user"></i>
+                </div>
+                <input
+                  type="name"
+                  class="style-input-modal"
+                  id="name_edit_profile_modal"
+                  name="name_edit_profile_modal"
+                  value="Luis Raúl Otañez Montiel"
+                  required
+                />
+              </div>
+              <!-- Email -->
+              <div class="style-group-input">
+                <div class="style-icon-modal">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <input
+                  type="email"
+                  class="style-input-modal"
+                  id="email_edit_profile_modal"
+                  name="email_edit_profile_modal"
+                  value="raul@gmail.com"
+                  required
+                />
+              </div>
+              <!-- Password -->
+              <div class="style-group-input">
+                <div class="style-icon-modal">
+                  <i class="fas fa-key"></i>
+                </div>
+                <input
+                  type="password"
+                  class="style-input-modal"
+                  id="password_edit_profile_modal"
+                  name="password_edit_profile_modal"
+                  value="Contraseña"
+                  required
+                />
+              </div>
+              <!-- Buttons -->
+              <button
+                type="submit"
+                class="style-btn-green"
+                id="btn-form-modal-edit-profile"
+              >
+                Guardar cambios
+              </button>
+              <button
+                type="button"
+                class="style-btn-transparent"
+                id="btn-cancel-modal-edit-profile"
+              >
+                Cancelar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/utils/definitions.js"></script>
     <script src="js/index.js"></script>

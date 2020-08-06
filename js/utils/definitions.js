@@ -22,3 +22,10 @@ const containerWordSpanish = document.querySelectorAll(
 
 let visibilityWordSpanish = false;
 let idWordSpanish = 0;
+
+const btnEditProfile = document.querySelector(".btn-edit-profile");
+const modalEditProfile = document.querySelector("#modal-edit-profile");
+const modalEditProfileBody = document.querySelector("#modal-edit-profile-body");
+const btnCancelModalEditProfile = document.querySelector(
+  "#btn-cancel-modal-edit-profile"
+);

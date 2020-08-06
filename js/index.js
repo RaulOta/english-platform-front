@@ -99,4 +99,21 @@ try {
       showWordSpanish(element);
     }
   };
+
+  /*==============================================
+  MODAL - EDIT PROFILE
+  ==============================================*/
+  btnEditProfile.addEventListener("click", () => {
+    modalEditProfile.style.display = "block";
+  });
+
+  modalEditProfile.addEventListener("click", (e) => {
+    if (!modalEditProfileBody.contains(e.target)) {
+      modalEditProfile.style.display = "none";
+    }
+  });
+
+  btnCancelModalEditProfile.addEventListener("click", () => {
+    modalEditProfile.style.display = "none";
+  });
 } catch (error) {}

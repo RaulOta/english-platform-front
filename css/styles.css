@@ -425,7 +425,7 @@ BODY CONTAINER WORDS - PAGE PROFILE
 ============================================*/
 #container-all-words {
   display: block;
-  margin: 50px 50px 0 0;
+  margin: 25px 50px 0 0;
 }
 
 .container-words-profile {
@@ -497,6 +497,92 @@ BODY CONTAINER WORDS - PAGE PROFILE
   transition: all 7s;
   display: none;
   font-size: 17px;
+}
+
+/*============================================
+BODY FORM INFO - PAGE PROFILE
+============================================*/
+#style-form-body-profile {
+  border-radius: 7px;
+  margin: 0;
+}
+
+.btn-edit-profile {
+  text-align: right;
+  font-size: 22px;
+  margin-top: -10px;
+  margin-right: 5px;
+  color: blue;
+}
+
+.fa-edit:hover {
+  cursor: pointer;
+  color: #707070;
+}
+
+.img-photo-profile {
+  height: 200px;
+  width: 200px;
+  margin: 0 0 25px;
+}
+
+/*============================================
+MODAL FORM EDIT - PAGE PROFILE
+============================================*/
+.principal-content-btn-new-img-profile {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -75px;
+}
+
+.secundary-content-btn-new-img-profile {
+  width: 190px;
+  height: 50px;
+}
+
+.form-info-profile .style-input-modal {
+  color: rgba(112, 112, 112, 84%);
+  border-color: rgba(112, 112, 112, 84%);
+}
+
+.position-icon-new-img-profile {
+  display: flex;
+  float: right;
+}
+
+.container-btn-new-img-profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background: rgba(112, 112, 112, 20%);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-btn-new-img-profile:hover {
+  background: rgba(112, 112, 112, 50%);
+}
+
+.icon-camera {
+  margin: 0;
+  padding: 0;
+}
+
+.icon-camera:hover {
+  cursor: pointer;
+}
+
+.btn-new-img-profile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 1;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
 }
 
 /*============================================
@@ -716,6 +802,21 @@ BODY CONTAINER WORDS - PAGE PROFILE
   .grid-form-logged-in .title-modal {
     font-size: 19px;
   }
+
+  /*============================================
+  BODY FORM INFO - PAGE PROFILE
+  ============================================*/
+  .img-photo-profile {
+    height: 185px;
+    width: 185px;
+  }
+
+  /*============================================
+  MODAL FORM EDIT - PAGE PROFILE
+  ============================================*/
+  .secundary-content-btn-new-img-profile {
+    width: 185px;
+  }
 }
 
 /*============================================
@@ -926,7 +1027,7 @@ BODY CONTAINER WORDS - PAGE PROFILE
   BODY CONTAINER WORDS - PAGE PROFILE
   ============================================*/
   #container-all-words {
-    margin: 50px 0 0;
+    margin: 25px 0 0;
   }
 
   .container-words-profile .container-text-word {
@@ -935,6 +1036,37 @@ BODY CONTAINER WORDS - PAGE PROFILE
 
   .container-words-profile .container-word-spanish {
     font-size: 16px;
+  }
+
+  /*============================================
+  BODY FORM INFO - PAGE PROFILE
+  ============================================*/
+  .grid-profile {
+    grid-template-rows: 1fr;
+  }
+
+  #container-all-words:nth-of-type(1) {
+    grid-row: 2;
+  }
+
+  .grid-form-info-profile:nth-of-type(2) {
+    grid-row: 1;
+  }
+
+  .grid-form-info-profile {
+    display: block;
+  }
+
+  .img-photo-profile {
+    height: 170px;
+    width: 170px;
+  }
+
+  /*============================================
+  MODAL FORM EDIT - PAGE PROFILE
+  ============================================*/
+  .secundary-content-btn-new-img-profile {
+    width: 170px;
   }
 }
 
@@ -1157,7 +1289,7 @@ BODY CONTAINER WORDS - PAGE PROFILE
   BODY CONTAINER WORDS - PAGE PROFILE
   ============================================*/
   #container-all-words {
-    margin: 50px 0 0;
+    margin: 25px 0 0;
   }
 
   .container-words-profile .container-text-word {
@@ -1166,5 +1298,36 @@ BODY CONTAINER WORDS - PAGE PROFILE
 
   .container-words-profile .container-word-spanish {
     font-size: 16px;
+  }
+
+  /*============================================
+  BODY FORM INFO - PAGE PROFILE
+  ============================================*/
+  .grid-profile {
+    grid-template-rows: 1fr;
+  }
+
+  #container-all-words:nth-of-type(1) {
+    grid-row: 2;
+  }
+
+  .grid-form-info-profile:nth-of-type(2) {
+    grid-row: 1;
+  }
+
+  .grid-form-info-profile {
+    display: block;
+  }
+
+  .img-photo-profile {
+    height: 170px;
+    width: 170px;
+  }
+
+  /*============================================
+  MODAL FORM EDIT - PAGE PROFILE
+  ============================================*/
+  .secundary-content-btn-new-img-profile {
+    width: 170px;
   }
 }
