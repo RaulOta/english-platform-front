@@ -29,3 +29,4 @@ const modalEditProfileBody = document.querySelector("#modal-edit-profile-body");
 const btnCancelModalEditProfile = document.querySelector(
   "#btn-cancel-modal-edit-profile"
 );
+const btnFileNewImg = document.querySelector("#new_img_profile");

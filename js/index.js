@@ -116,4 +116,31 @@ try {
   btnCancelModalEditProfile.addEventListener("click", () => {
     modalEditProfile.style.display = "none";
   });
+
+  /*==============================================
+  PREVIEW TEMPORARILY IMAGES
+  ==============================================*/
+  btnFileNewImg.addEventListener("change", (e) => {
+    const image = e.target.files[0];
+    const typeImg = e.target.getAttribute("name");
+
+    /* Validate the image format that is JPG or PNG */
+    if (image["type"] != "image/jpeg" && image["type"] != "image/png") {
+      btnFileNewImg.value = "";
+      alert("¡La imágen debe de estar en formato JPG o PNG!");
+    } else if (image["size"] > 2000000) {
+      btnFileNewImg.value = "";
+      alert("¡La imágen no debe pesar más de 2MB!");
+    } else {
+      let imageData = new FileReader();
+      imageData.readAsDataURL(image);
+      imageData.addEventListener("load", function (event) {
+        const imagePath = event.target.result;
+        const previewNewImage = document.querySelector(
+          `.previewImg_${typeImg}`
+        );
+        previewNewImage.src = imagePath;
+      });
+    }
+  });
 } catch (error) {}
