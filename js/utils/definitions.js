@@ -30,3 +30,10 @@ const btnCancelModalEditProfile = document.querySelector(
   "#btn-cancel-modal-edit-profile"
 );
 const btnFileNewImg = document.querySelector("#new_img_profile");
+const btnMenuLoggedIn = document.querySelector("#btn-menu-logged-in");
+const menuLoggedIn = document.querySelector(
+  ".principal-container-menu-logged-in"
+);
+const secundaryMenuLoggedIn = document.querySelector(
+  ".secundary-container-menu-logged-in"
+);

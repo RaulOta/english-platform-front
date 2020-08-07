@@ -144,3 +144,29 @@ try {
     }
   });
 } catch (error) {}
+
+try {
+  /*==============================================
+  DROPDOWN MENU - LOGGED IN
+  ==============================================*/
+  const menuLoggedInShow = () => {
+    const wid = document.documentElement.clientWidth;
+    if (wid > 767) {
+      menuLoggedIn.style.display = "block";
+    } else {
+      menuLoggedInHidden;
+    }
+  };
+
+  const menuLoggedInHidden = () => {
+    menuLoggedIn.style.display = "none";
+  };
+
+  btnMenuLoggedIn.addEventListener("mouseenter", menuLoggedInShow);
+
+  btnMenuLoggedIn.addEventListener("mouseleave", menuLoggedInHidden);
+
+  secundaryMenuLoggedIn.addEventListener("mouseenter", menuLoggedInShow);
+
+  secundaryMenuLoggedIn.addEventListener("mouseleave", menuLoggedInHidden);
+} catch (error) {}
