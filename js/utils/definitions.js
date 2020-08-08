@@ -37,3 +37,5 @@ const menuLoggedIn = document.querySelector(
 const secundaryMenuLoggedIn = document.querySelector(
   ".secundary-container-menu-logged-in"
 );
+const menuMobileLoggedIn = document.querySelector(".grid-menu-mobile");
+const btnHiddenMenuMobile = document.querySelector(".fa-arrow-left");

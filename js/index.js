@@ -149,12 +149,14 @@ try {
   /*==============================================
   DROPDOWN MENU - LOGGED IN
   ==============================================*/
+  const sizeScreenWidt = () => document.documentElement.clientWidth;
+
   const menuLoggedInShow = () => {
-    const wid = document.documentElement.clientWidth;
-    if (wid > 767) {
+    if (sizeScreenWidt() > 767) {
       menuLoggedIn.style.display = "block";
+      menuMobileAction("-85%");
     } else {
-      menuLoggedInHidden;
+      menuMobileAction("0");
     }
   };
 
@@ -169,4 +171,15 @@ try {
   secundaryMenuLoggedIn.addEventListener("mouseenter", menuLoggedInShow);
 
   secundaryMenuLoggedIn.addEventListener("mouseleave", menuLoggedInHidden);
+
+  /*==============================================
+  DROPDOWN MOBILE MENU- LOGGED IN
+  ==============================================*/
+  const menuMobileAction = (value) => {
+    menuMobileLoggedIn.style.left = value;
+  };
+
+  btnHiddenMenuMobile.addEventListener("click", () => {
+    menuMobileAction("-85%");
+  });
 } catch (error) {}

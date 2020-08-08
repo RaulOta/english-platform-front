@@ -658,6 +658,43 @@ DROPDOWN MENU - LOGGED IN
   color: rgba(112, 112, 112, 50%);
 }
 
+/*==============================================
+DROPDOWN MOBILE MENU - LOGGED IN
+==============================================*/
+.grid-menu-mobile {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: -75%;
+  z-index: 101;
+  width: 75%;
+  height: 100%;
+  overflow-x: hidden;
+  opacity: 1;
+  border-right: 1px solid rgba(112, 112, 112, 50%);
+  transition: all 2s;
+}
+
+.fa-arrow-left:hover {
+  color: rgba(112, 112, 112, 50%);
+  cursor: pointer;
+}
+
+.container-menu-mobile-li {
+  padding: 10px 50px;
+  margin: 0;
+}
+
+.container-menu-mobile-li a {
+  font-size: 18px;
+  font-weight: 400px;
+  color: #707070;
+}
+
+.container-menu-mobile-li:hover {
+  background: rgba(112, 112, 112, 20%);
+}
+
 /*============================================
   HORIZONTAL TABLET (LG review in 1024px)
   ============================================*/
@@ -1141,6 +1178,14 @@ DROPDOWN MENU - LOGGED IN
   .secundary-content-btn-new-img-profile {
     width: 170px;
   }
+
+  /*==============================================
+  DROPDOWN MOBILE MENU - LOGGED IN
+  ==============================================*/
+  .container-menu-mobile-li {
+    padding: 10px 50px;
+    margin: 0;
+  }
 }
 
 /*============================================
@@ -1402,5 +1447,18 @@ DROPDOWN MENU - LOGGED IN
   ============================================*/
   .secundary-content-btn-new-img-profile {
     width: 170px;
+  }
+
+  /*==============================================
+  DROPDOWN MOBILE MENU- LOGGED IN
+  ==============================================*/
+  .container-menu-mobile-li {
+    padding: 10px 30px;
+    margin: 0;
+  }
+
+  .grid-menu-mobile {
+    left: -85%;
+    width: 85%;
   }
 }
