@@ -1,17 +1,14 @@
-## Pracsite ![PyPI - Status](https://img.shields.io/badge/status-in%20progress-yellow)
----
+# Pracsite ![PyPI - Status](https://img.shields.io/badge/status-in%20progress-yellow)
 🤓 Platform that help memory words in english with method free practice exams.
 
-![](https://repository-images.githubusercontent.com/282026043/89fcd780-dd5c-11ea-83a7-1fad2b710df4)
+![](https://repository-images.githubusercontent.com/282026043/6db36780-dd69-11ea-9aa6-99ef5d6cf668)
 
 [DEMO](https://raulota.github.io/english-platform-front/)
 
-### ⚙ Installation
----
+## ⚙ Installation
 1. Clone the proyect.
 2. Go to the folder project.
 3. Open file index.html in a navigator or text editor.
 
-### 📃 License
----
+## 📃 License
 Copyright
