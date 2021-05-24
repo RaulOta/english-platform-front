@@ -39,3 +39,17 @@ const secundaryMenuLoggedIn = document.querySelector(
 );
 const menuMobileLoggedIn = document.querySelector(".grid-menu-mobile");
 const btnHiddenMenuMobile = document.querySelector(".fa-arrow-left");
+
+/*==============================================
+MESSAGE ALERTS SUCCESS, ERROR AND WARNING
+==============================================*/
+const btnAddWord = document.querySelector("#btn-add-word");
+const btnAddWordModal = document.querySelector("#btn-add-word-modal");
+const containerMainAlert = document.querySelector("#container-main-alert");
+const textMessageAlert = document.querySelector("#text-message-alert");
+
+const typeMessage = {
+  success: "rgba(146, 235, 109, 0.7)",
+  error: "rgba(255, 0, 0, 0.7)",
+  warning: "rgba(255, 158, 12, 0.8)"
+};

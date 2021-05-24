@@ -183,3 +183,44 @@ try {
     menuMobileAction("-85%");
   });
 } catch (error) {}
+
+/*==============================================
+MESSAGE ALERTS SUCCESS, ERROR AND WARNING
+==============================================*/
+try {
+
+  const messageAlert = (message, type) => {
+    let heightMessage = "";
+    let textSizeMessage = "";
+    if(screen.width < 576){
+      heightMessage = "13%";
+      textSizeMessage = "18px";
+    }else if(screen.width < 767 && screen.width > 577){
+      heightMessage = "17%";
+      textSizeMessage = "21px";
+    }else{
+      heightMessage = "19%";
+      textSizeMessage = "25px";
+    }
+    containerMainAlert.style.background = type;
+    containerMainAlert.style.height = heightMessage;
+    containerMainAlert.style.transition = "height";
+    containerMainAlert.style.transition = "all 0.5s";
+    textMessageAlert.innerHTML = message;
+    textMessageAlert.style.fontSize = textSizeMessage;
+    textMessageAlert.style.display = "block";
+
+    setTimeout(() => {
+      containerMainAlert.style.height = "0%";
+      textMessageAlert.style.display = "none";
+    }, 5000);
+  };
+
+  btnAddWord.addEventListener("click", (e)=>{
+    messageAlert("¡Error :(!", typeMessage.warning);
+  });
+
+  btnAddWordModal.addEventListener("click", (e)=>{
+    messageAlert("¡Error :(!", typeMessage.warning);
+  });
+} catch (error) {}

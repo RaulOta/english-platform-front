@@ -696,6 +696,32 @@ DROPDOWN MOBILE MENU - LOGGED IN
 }
 
 /*============================================
+CONTAINER MESSAGE ALERT
+============================================*/
+.container-main-alert {
+  z-index: -5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 0%;
+}
+
+.container-message-text {
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.text-message-alert {
+  color: white;
+  display: none;
+}
+
+/*============================================
   HORIZONTAL TABLET (LG review in 1024px)
   ============================================*/
 @media (max-width: 1119px) and (min-width: 992px) {
